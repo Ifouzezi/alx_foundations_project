@@ -759,4 +759,8 @@ body {
   align-items: center;
   gap: 80px;
   }
-  
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
