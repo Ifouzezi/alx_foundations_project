@@ -770,20 +770,25 @@ body {
 
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
-  .container {
-    padding-bottom: 32px;
+  body {
+    margin-left: 16px; /* Add a margin to the left side */
+    overflow-x: hidden; /* Hide horizontal overflow */
   }
-
-  .header {
-    padding-right: 16px; /* Adjust the padding as needed */
-  }
-
+  .container,
   .content,
   .content1,
   .content3 {
-    width: auto;
-    margin: 0;
-    padding: 20px; /* Adjust padding as needed */
+    width: 100%;
+    padding: 16px;
+  }
+
+
+  .header1 {
+    display: none;
+  }
+
+  .mood-title{
+    display: none;
   }
 
   .logo img {
