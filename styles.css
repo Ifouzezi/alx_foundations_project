@@ -1,6 +1,9 @@
 body {
-    background-color: #020202;
-  }
+  background-color: #020202;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: "Open Sans", sans-serif;
+}
   /* Sign in page 1 */
   .container {
     width: 100%;
@@ -763,4 +766,32 @@ body {
   *{
     margin: 0;
     padding: 0;
+  }
+
+  @media only screen and (max-width: 768px){
+    .mood-selector {
+      display: inline-flex;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      }
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .mood-title {
+        display: none;
+      }
+
+      .mobile{
+        display: flex;
+        border: 320px;
+        padding: 4px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
   }
