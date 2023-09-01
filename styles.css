@@ -873,14 +873,13 @@ body {
   }
 
   .section-arr {
-    padding: 8px;
     display: inline-flex;
-    padding: 4px 16px;
-    justify-content: inherit;
+    justify-content: space-between; /* Change to space-between */
     align-items: center;
-    gap: 160.648px;
-    width: auto;
+    width: 320px;
+    padding: 8px 16px; /* Adjust padding as needed */
   }
+  
   .section-item {
     display: flex;
     padding: 4px;
