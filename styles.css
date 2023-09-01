@@ -874,6 +874,12 @@ body {
 
   .section-arr {
     padding: 8px;
+    display: inline-flex;
+    padding: 4px 16px;
+    justify-content: inherit;
+    align-items: center;
+    gap: 160.648px;
+    width: auto;
   }
   .section-item {
     display: flex;
