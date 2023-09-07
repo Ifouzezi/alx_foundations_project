@@ -99,7 +99,7 @@ body {
   
   .content {
     width: 580px;
-    height: 844px;
+    height: 910px;
     position: relative;
     background: rgba(18, 18, 18, 0.90);
     border-radius: 8px;
@@ -115,7 +115,7 @@ body {
   
   .content1{
     width: 580px;
-    height: 750px;
+    height: 785px;
     position: relative;
     background: rgba(18, 18, 18, 0.90);
     border-radius: 8px;
@@ -273,6 +273,34 @@ body {
     /*margin-bottom: 16px;*/
     margin-top: -82px; 
     margin-bottom: 45px;
+  }
+    .input-field {
+      position: relative;
+      margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: transparent; /* Remove the default background */
+      font-size: 16px;
+      font-family: "Open Sans",sans-serif; /* Change the font family */
+      color: #ADADAD; /* Change the text color */
+      outline: none;
+  }
+
+  /* Style the placeholder text */
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="password"]::placeholder {
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif; /* Change the font family */
+    color: #ADADAD; /* Change the text color */
+    outline: none;
+    background: transparent;
   }
   
   .divider-horizontal {

@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
+        <script src="script.js"></script>
+
         <title>Sign up</title>
     </head>
 <body>
@@ -28,22 +30,30 @@
                         <span class="light-text">Time to make your unique music blend on </span>
                         <span class="highlight-text">Harmonix!</span>
                     </div>
-                    <div class="input-field">First Name</div>
-                    <div class="input-field">Last Name</div>
-                    <div class="input-field">Email Address</div>
-                    <div class="input-field">Password</div>
+                    <div class="input-field">
+                        <input type="text" id="firstName" onfocus="clearPlaceholder('firstName')" onblur="restorePlaceholder('firstName')" value="First Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="lastName" onfocus="clearPlaceholder('lastName')" onblur="restorePlaceholder('lastName')" value="Last Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email" onfocus="clearPlaceholder('email')" onblur="restorePlaceholder('email')" value="Email Address">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" onfocus="clearPlaceholder('password')" onblur="restorePlaceholder('password')" value="Password">
+                    </div>
                     <div class="divider-horizontal">
                         <div class="divider-container">
                             <hr class="line">
                             <div class="or">or</div>
                             <hr class="line">
                           </div>
-                        <div class="social-box">
-                            <div class="social">
+                        <div class="social-box" >
+                            <div class="social" onclick="fakeGoogleLogin()">
                                 <img src="Images/google.png" alt="Google Icon" />
                                 <div class="social-text"></div>
                             </div>
-                            <div class="social">
+                            <div class="social" onclick="fakeFacebookLogin()">
                                 <img src="Images/facebook.png" alt="Facebook Icon" />
                                 <div class="social-text"></div>
                             </div>
@@ -51,7 +61,7 @@
                         <div class="terms-text">
                             By clicking “Sign up,” you agree to our <a href="#">Terms to Use</a> and <a href="#">Privacy Policy</a>
                     </div>
-                    <form action="signup.html" method="get">
+                    <form action="index.html" method="get">
                         <button type="submit" class="sign-up-button">
                           <strong>Sign up</strong>
                         </button>
