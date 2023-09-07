@@ -796,6 +796,23 @@ body {
     padding: 0;
   }
 
+.signin-button:hover, .section-more:hover, .sign-up-button:hover  {
+    background-color: #c70d0d; /* New background color on hover */
+    color: #ffffff; /* New text color on hover */
+}
+
+/* CSS for link hover effect */
+.no-underline1, {
+    text-decoration: none; /* Remove default underline */
+    color: #F50F0F; /* Default text color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.no-underline1:hover, {
+    color: #F50F0F; /* New text color on hover */
+}
+
+
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
   body {
