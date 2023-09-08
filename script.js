@@ -127,3 +127,15 @@ const audio = document.getElementById("music-player");
         pauseButton.style.display = "none";
         playButton.style.display = "block";
     });
+
+    const fileInput = document.getElementById('file-input');
+    const profilePicture = document.getElementById('profile-picture');
+
+    fileInput.addEventListener('change', function () {
+        const selectedFile = fileInput.files[0];
+
+        if (selectedFile) {
+            const objectURL = URL.createObjectURL(selectedFile);
+            profilePicture.src = objectURL;
+        }
+    });
